@@ -3,44 +3,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    background-color: darkgray;
+    min-height: 100vh;
 }
 
 header {
     background-color: #000000;
-    height: 250px;
+    color: white;
     text-align: center;
-
-    
 }
 
 header h1 {
-    color: white;    
     font-family: 'Passion One', serif;
     font-size: 124px;
+    font-variant: small-caps;
+    padding: 50px;
 }
 
 header p {
-    color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font: normal;
     font-size: 16px;
+    padding-bottom: 50px;
 }
 
-header a {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font: bold;
+a {
+    font-family: Verdana, Geneva, Tahoma, 
+    sans-serif;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 section {
-    margin: 20px;
     font-family: 'Sriracha';
     font-size: 43px;
     font: 100;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
 }
 
-.section_02 {
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.image {
+    background-color: darkgrey;
+    color: white;
+}
+
+section.image > p {
+    width: 400px;
+    background-color: #000D00;
+}
+
+/*.section_02 {
     background-image: url(imagens/background001.jpg);
     background-size: 100% 100%;
     color: white;
@@ -50,13 +79,13 @@ section {
     background-image: url(imagens/background002.jpg);
     background-size: 100% 100%;
     color: white;
-}
+}*/
 
 footer {
     background-color: #000000;
     text-align: center;
-    height: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
+    padding: 10px;
 }
 

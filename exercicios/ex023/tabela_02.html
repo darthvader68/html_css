@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse; /*junta a tabela em 01 linha*/
+            position: relative;
         }
      
         td, th {
@@ -29,6 +30,12 @@
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th { /*essa configuracao mantem o cabecalho da tabela fixo durante a rolagem*/
+            position: sticky; /*sticky - grudavel*/
+            top: -1px;
+            background-color: gray;
         }
 
         tbody tr:nth-child(even) { /* efeito zebrado - escolher odd (impar) ou even (par)*/

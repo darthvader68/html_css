@@ -33,15 +33,15 @@ padding: 10px;
     
         <thead>
             <tr>
-                <th>Grupos</th>
-                <th>Nomes</th>
-                <th colspan="3">Filmes</th>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
             </tr>
         </thead>
     
         <tbody>
             <tr>
-                <th rowspan="3">Mulheres</th>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
                 <td>ana maria santos</td>
                 <td>alien</td>
                 <td>rambo</td>
@@ -60,7 +60,7 @@ padding: 10px;
                 <td>big hero</td>
             </tr>
             <tr>
-                <th rowspan="3">Homens</th>
+                <th rowspan="3" scope="rowgroup">Homens</th>
                 <td>bruno mendonça</td>
                 <td>amnesia</td>
                 <td>intocaveis</td>
@@ -79,6 +79,11 @@ padding: 10px;
                 <td>toy story</td>
             </tr>
         </tbody>
+
+        <tfoot>
+            <th colspan="4" scope="row">Total</th>
+            <td>1000</td>
+        </tfoot>
     </table>
 
 </body>
